@@ -1,0 +1,56 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: grid;
+    height: rem;
+    width: 16rem;
+}
+.in_card{
+    height: 8rem;
+    width: 8rem;
+    text-align: center;
+}
+.in_card:nth-child(1){
+    background-color: rgba(255, 192, 203, 0.397);
+    grid-column: 1;
+    grid-row: 1;
+    box-shadow: 2px 2px 5px 10px rgba(255, 192, 203, 0.425);
+    border-radius: 30px;
+    filter: blur(10px);
+}
+.in_card:nth-child(2){
+    background-color: rgba(143, 208, 219, 0.418);
+    grid-column: 1;
+    grid-row: 2;
+    box-shadow: 2px 2px 5px 10px rgba(143, 208, 219, 0.322);
+    border-radius: 30px;
+    filter: blur(10px);
+}
+.in_card:nth-child(3){
+    background-color:rgba(172, 255, 47, 0.411);
+    grid-column: 2;
+    grid-row: 1;
+    box-shadow: 2px 2px 5px 10px rgba(172, 255, 47, 0.384);
+    border-radius: 30px;
+    filter: blur(10px);
+}
+.in_card:nth-child(4){
+    background-color:rgba(47, 255, 168, 0.404);
+    grid-column: 2;
+    grid-row: 2;
+    box-shadow: 2px 2px 5px 10px rgba(47, 255, 168, 0.329);
+    border-radius: 30px;
+    filter: blur(10px);
+}
+.card{
+    height: 12rem;
+    width: 12rem;
+    background-color: rgba(215, 233, 250, 0.315);
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: inset  0px 0px 20px 20px rgb(255 255 255 / 60%);
+    backdrop-filter:  blur(10px);
+}

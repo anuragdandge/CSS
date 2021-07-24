@@ -1,0 +1,75 @@
+body{
+   
+    background-color: rgb(70, 153, 125);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.laptop{
+    border-radius: 5px;
+    height: 500px;
+    width: 450px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+.screen , .keyboard{
+    height: 50%;
+    width: 100%;
+}
+.screen {
+    background-color: black;    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px 3px 0px 0px ;
+}
+
+.camera{
+    height: 8px;
+    width: 8px;
+    margin: -23px 0px 17px 0px;
+    border-radius: 5px;
+    background-color: rgb(156, 156, 156);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#red{
+    height: 3px;
+    width: 3px;
+    background-color: rgb(129, 28, 28);
+    border-radius: 2px; 
+}
+.display{
+
+    height: 85%;
+    width: 97%;
+    margin-top: -15px;
+    border-radius: 2px;
+    border: 2px rgb(104 99 99);
+    border-style: inset;
+    background-color: aliceblue;
+}
+.bar{
+    height: 15px;
+    width: 350px;
+    position: absolute;
+    background-color: white;
+    border-radius: 2px;
+    background-image:linear-gradient(rgb(207, 207, 202) , rgb(255, 255, 255)  ,black );
+}
+.keyboard{
+    justify-content: center;
+    display: flex;
+    background-color: rgb(126, 126, 126);  
+}
+.keyboard_frame{
+    margin: 15px;
+    height: 60%;
+    width: 92%;
+    background-color: azure;
+}
