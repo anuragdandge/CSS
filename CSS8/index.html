@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        $(document).ready(function() {
+            $(".pro1").mouseenter(function() {
+                $(".plus1").animate({
+                        opacity: "1",
+                    },
+                    250
+                );
+                $(".icon").animate({
+                        height: "70px",
+                        width: "70px",
+                    },
+                    250
+                );
+            });
+            //onClick on Plus Button
+            $(".plus1").click(function() {
+                $(".cover").css({
+                    "z-index": "1",
+                });
+                $("#bottom").css({
+                    // "height": "50%",
+                    "opacity": "1",
+                    transition: "all .5s ease-in-out",
+                });
+
+                $("#top").css({
+                        transform: "translate3d(0,0,0)",
+                        transition: "all .5s ease-in-out",
+                    },
+                    500
+                );
+                $("#bottom").css({
+                        transform: "translate3d(0,0,0)",
+                        transition: "all .5s ease-in",
+                    },
+                    500
+                );
+                $("#close").css({
+                    transform: "translate3d(0,0,0)",
+                    "z-index": "2",
+                    transition: "all .7s ease-in-out",
+                });
+                $(".profile").css({
+                    transform: "translate3d(0,150%,0)",
+                    transition: "all .7s ease-in-out",
+                });
+            });
+
+            //onClick on Close Button
+
+            $("#close").click(function() {
+                $(".cover").css({
+                    "z-index": "0",
+                });
+                $("#bottom").css({
+                    // "height": "0",
+                    "opacity": "0",
+                    transition: "all .5s ease-in-out",
+                });
+                $("#top").css({
+                    transform: "translate3d(0,-105%,0)",
+                    transition: "all .5s ease-in-out",
+                });
+                $("#bottom").css({
+                    transform: "translate3d(0,105%,0)",
+                    transition: "all .5s ease-in",
+                });
+                $("#close").css({
+                    "z-index": "0",
+                    transform: "translate3d(0,-160%,0)",
+                });
+                $(".profile").css({
+                    transform: "translate3d(0,-110%,0)",
+                    transition: "all .7s ease-in-out",
+                });
+            });
+
+            $(".pro1").mouseleave(function() {
+                $(".plus1").animate({
+                        opacity: "0",
+                    },
+                    250
+                );
+                $(".icon").animate({
+                        height: "130px",
+                        width: "130px",
+                    },
+                    250
+                );
+            });
+
+            $(".pro2").mouseenter(function() {
+                $(".plus2").animate({
+                        opacity: "1",
+                    },
+                    250
+                );
+                $(".icon").animate({
+                        height: "70px",
+                        width: "70px",
+                    },
+                    250
+                );
+            });
+            $(".pro2").mouseleave(function() {
+                $(".plus2").animate({
+                        opacity: "0",
+                    },
+                    250
+                );
+                $(".icon").animate({
+                        height: "130px",
+                        width: "130px",
+                    },
+                    250
+                );
+            });
+
+            $(".pro3").mouseenter(function() {
+                $(".plus3").animate({
+                        opacity: "1",
+                    },
+                    250
+                );
+                $(".icon").animate({
+                        height: "70px",
+                        width: "70px",
+                    },
+                    250
+                );
+            });
+            $(".pro3").mouseleave(function() {
+                $(".plus3").animate({
+                        opacity: "0",
+                    },
+                    250
+                );
+                $(".icon").animate({
+                        height: "130px",
+                        width: "130px",
+                    },
+                    250
+                );
+            });
+
+            $(".pro4").mouseenter(function() {
+                $(".plus4").animate({
+                        opacity: "1",
+                    },
+                    250
+                );
+                $(".icon").animate({
+                        height: "70px",
+                        width: "70px",
+                    },
+                    250
+                );
+            });
+            $(".pro4").mouseleave(function() {
+                $(".plus4").animate({
+                        opacity: "0",
+                    },
+                    250
+                );
+                $(".icon").animate({
+                        height: "130px",
+                        width: "130px",
+                    },
+                    250
+                );
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="center">
+            <div class="frame">
+                <div class="cover">
+                    <center>
+                        <div class="profile">
+                            <img src="profile.jpg" id="profile" alt="" srcset="" height="130px" width="130px" />
+                        </div>
+                    </center>
+                    <div id="close">
+                        <svg class="close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path
+                d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"
+              />
+            </svg>
+                    </div>
+                    <div id="top">
+                        <img src="image.png" alt="" srcset="" height="100%" width="100%" />
+                    </div>
+
+                    <div id="bottom">
+                        <div id="action">
+                            <img src="Phone.svg" alt="" srcset="">
+                        </div>
+                        <div id="action">
+                            <img src="Comment.svg" alt="">
+                        </div>
+                        <div id="action">
+                            <img src="Like.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro1">
+                    <img src="img.jpg" alt="" srcset="" height="290px" width="290px" />
+                    <div class="plus1">
+                        <div class="icon">
+                            <div id="h"></div>
+                            <div id="v"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro2">
+                    <img src="img.jpg" alt="" srcset="" height="290px" width="290px" />
+                    <div class="plus2">
+                        <div class="icon">
+                            <div id="h"></div>
+                            <div id="v"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro3">
+                    <img src="img.jpg" alt="" srcset="" height="290px" width="290px" />
+                    <div class="plus3">
+                        <div class="icon">
+                            <div id="h"></div>
+                            <div id="v"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro4">
+                    <img src="img.jpg" alt="" srcset="" height="290px" width="290px" />
+                    <div class="plus4">
+                        <div class="icon">
+                            <div id="h"></div>
+                            <div id="v"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
